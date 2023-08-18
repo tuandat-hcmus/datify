@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datify</title>
+    <link rel="icon" type="image/x-icon" href="./img/spotify.ico">
+</head>
+<body>
+    <p>
+        Hello <span id="userName"></span>, welcome to the party 
+    </p>
+    <script>
+       const name = document.getElementById('userName');
+       name.innerText = window.localStorage.getItem('username');
+    </script>
+</body>
+</html>
