@@ -253,3 +253,9 @@ label {
 .submit-button:hover {
     font-size: larger;
 }
+
+#fill-error {
+    color: red;
+    text-align: center;
+    font-weight: 600;
+}
