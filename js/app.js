@@ -4,7 +4,7 @@
 function Playlist(name, content, img){
     this.title = name;
     this.content = content;
-    this.coverImg = `./../img/cover/playlists/${img}`;
+    this.coverImg = `./img/cover/playlists/${img}`;
     this.shortenContent = function() {
         let res = content;
         if(res.length > 30){
