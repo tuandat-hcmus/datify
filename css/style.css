@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Oswald:wght@500&family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Oswald:wght@500&family=Roboto+Slab&display=swap');
 
 :root {
     --base-background: #121212;
@@ -7,11 +7,11 @@
     --subtext-color: #a7a7a7;
     --icon-color: invert(73%) sepia(1%) saturate(3%) hue-rotate(21deg) brightness(93%) contrast(89%);
     --active-icon-color: invert(1) hue-rotate(0deg) saturate(0%) brightness(100%);
-    --columns: 6;
     --card-color: #181818;
     --card-hover-color: #272727;
     --green-button-color: #1ed760;
     --green-hover-button-color: #6FE89C;
+    --columns: 6;
 }
 
 body {
@@ -340,8 +340,11 @@ img {
     background-color: var(--base-background);
     grid-area: main;
     overflow-y: scroll;
+    overflow-x: hidden;
     border-radius: 0.5rem;
 }
+
+
 
 .main-view-container::-webkit-scrollbar {
     width: 1rem;
@@ -450,7 +453,7 @@ img {
     margin-bottom: 1rem;
 }
 
-.lists-title a {
+.lists-title a, .lists-title h2 {
     text-decoration: none;
     font-family: var(--base-font-family);
 }
@@ -459,7 +462,7 @@ img {
     text-decoration: underline;
 }
 
-.lists-title a:nth-of-type(1) {
+.lists-title a:nth-of-type(1), .lists-title h2 {
     font-size: 1.5rem;
     font-weight: 700;
     color: #fff;
@@ -473,18 +476,19 @@ img {
 
 /*card style*/
 .card-container {
-    --columns: 6;
     display: grid;
     grid-template-columns: repeat(var(--columns), minmax(0, 1fr));
     grid-template-rows: 1fr;
+    grid-auto-rows: auto;
     gap: 1.5rem;
 }
 
 .card {
     padding: 1rem;
     background-color: var(--card-color);
-    border-radius: 0.25rem;
+    border-radius: 0.325rem;
     transition: 350ms;
+    cursor: pointer;
 }
 
 .card:hover {
@@ -591,7 +595,7 @@ img {
 .top-links li a {
     text-decoration: none;
     color: var(--subtext-color);
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .top-links li a:hover {
