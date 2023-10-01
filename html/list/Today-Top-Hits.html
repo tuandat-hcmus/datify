@@ -13,6 +13,7 @@
 <body>
     <div id="app">
         <header class="topbar">
+            <div class="topbar-background"></div>
             <div class="next-prev-btn-container">
                 <button>
                     <img src="../../assets/previous-button.svg" alt="">
@@ -21,12 +22,18 @@
                     <img src="../../assets/forward-button.svg" alt="">
                 </button>
             </div>
+            <div class="topbar-content">
+
+            </div>
             <div class="signup-and-login">
                 <button>Sign up</button>
                 <button id="login">Login
                 </button>
             </div>
         </header>
+        <div class="background-image">
+            <div></div>
+        </div>
         <section class="side-bar">
             <div id="resizer">
                 <div class="resizer-line"></div>
@@ -126,26 +133,61 @@
             </div>
         </section>
         <section class="main-view-container" id="main-view">
-            <div class="home-page">
-                <section class="lists">
-                    <div class="lists-title">
-                        <h2>Spotify Playlists</h2>
+            <section class="content-heading">
+                <h6>Playlist</h6>
+                <h1>Today's Top Hits</h1>
+                <p>Jungkook is on top of the hottest 50!</p>
+                <div>
+                    <img src="../../img/logo/spotify.ico" alt="">
+                    <p>Spotify &euro; 31,412,492 likes &euro; 50 songs, about 2hr 30min</p>
+                </div>
+            </section>
+            <section class="main-content">
+                <div></div>
+                <div class="action-bar">
+                    <button><img src="../../assets/play-button.svg" alt=""></button>
+                    <button><img src="../../assets/heart-icon.svg" alt=""></button>
+                    <button><img src="../../assets/more-option.svg" alt=""></button>
+                </div>
+                
+                <div class="playlist-tracks">
+                    <div class="track-header">
+                        <div class="track">
+                            <h6>#</h6>
+                            <h6>Title</h6>
+                            <h6>Album</h6>
+                            <h6>Date added</h6>
+                            <h6><img src="../../assets/clock.svg" alt=""></h6>
+                        </div>
                     </div>
-                    <div class="card-container" id="playlists-container">
-                    </div>
-                </section>
-            </div>
+                    <div class="track"></div>
+                    <div class="track"></div>
+                    <div class="track"></div>
+                    <div class="track"></div>
+                    <div class="track"></div>
+                    <div class="track"></div>
+                    <div class="track"></div>
+                    <div class="track"></div>
+                    <div class="track"></div>
+                    <div class="track"></div>
+                </div>
+            </section>
+           
             <footer class="home-page-footer">
                 <div class="top-section">
                     <div class="top-links">
                         <ul>
-                            <li><p>Company</p></li>
+                            <li>
+                                <p>Company</p>
+                            </li>
                             <li><a href="/">About</a></li>
                             <li><a href="/">Jobs</a></li>
                             <li><a href="/">For the Record</a></li>
                         </ul>
                         <ul>
-                            <li><p>Communities</p></li>
+                            <li>
+                                <p>Communities</p>
+                            </li>
                             <li><a href="/">For Artists</a></li>
                             <li><a href="/">Developers</a></li>
                             <li><a href="/">Advertising</a></li>
@@ -153,7 +195,9 @@
                             <li><a href="/">Vendors</a></li>
                         </ul>
                         <ul>
-                            <li><p>Useful links</p></li>
+                            <li>
+                                <p>Useful links</p>
+                            </li>
                             <li><a href="/">Support</a></li>
                             <li><a href="/">Free mobile app</a></li>
                         </ul>
@@ -180,6 +224,7 @@
             <button>Sign up free</button>
         </footer>
     </div>
+    <script src="../../js/tracklist.js"></script>
 </body>
 
 </html>
