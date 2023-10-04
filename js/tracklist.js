@@ -97,10 +97,6 @@ const trackArr = [
     new Track('Love Yourself', 'Purpose.jpg', 'Justin Bieber', 'Purpose (Deluxe)', '13 Nov 2015', '3:53')
 ];
 
-trackArr.forEach(item => {
-    console.log(item);
-});
-
 const trackList = document.querySelector('.list-of-tracks');
 for (let i = 0; i < trackArr.length; i++) {
     trackList.appendChild(createTrack(i + 1, '../..', trackArr[i]));
