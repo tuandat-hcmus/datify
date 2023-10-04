@@ -638,7 +638,7 @@ img {
 .track {
     display: grid;
     padding: 0 1rem;
-    grid-template-columns: 1rem 6fr 4fr 3fr minmax(120px, 1fr);
+    grid-template-columns: 1rem 6fr 4fr 3fr [last] minmax(120px, 1fr);
     grid-gap: 1rem;
     align-items: center;
     color: var(--subtext-color);
@@ -653,13 +653,19 @@ img {
     background-color: rgba(255, 255, 255, .1);
 }
 
-.track:hover a {
+.track:hover a,
+.track:focus a {
     color: #fff;
+}
+
+.track:focus {
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 .track a {
     text-decoration: none;
     color: var(--subtext-color);
+    width: fit-content;
 }
 
 .track a:hover {
@@ -678,6 +684,15 @@ img {
     height: 2.25rem;
     border-bottom: 1px solid hsla(0, 0%, 100%, .1);
     pointer-events: none;
+    font-weight: 600;
+}
+
+.track-header .track>h6:nth-of-type(5) {
+    justify-self: end;
+}
+
+.track-header .track>h6>img {
+    margin-right: 2rem;
 }
 
 .track-header img {
@@ -709,13 +724,22 @@ img {
     height: auto;
     filter: var(--active-icon-color);
 }
-.track:hover .track-play span {
+
+.track:hover .track-play span,
+.track:focus .track-play span {
     opacity: 0;
 }
 
-.track:hover .track-play button {
+.track:hover .track-play button,
+.track:focus .track-play button {
     opacity: 1;
 }
+
+.track:hover .last-cell button,
+.track:focus .last-cell button {
+    opacity: 1;
+}
+
 .song {
     display: flex;
     align-items: stretch;
@@ -739,6 +763,43 @@ img {
 
 .song>div>a:nth-child(2) {
     font-size: 0.815rem;
+}
+
+.last-cell {
+    display: flex;
+    align-items: center;
+    grid-column: 5;
+    justify-self: end;
+}
+
+.last-cell button {
+    display: flex;
+    padding: 0.5rem 0;
+    background-color: transparent;
+    border: none;
+    opacity: 0;
+}
+
+.last-cell>span {
+    margin: 0 1rem;
+    justify-content: flex-end;
+}
+
+.last-cell button:nth-of-type(1) {
+    filter: var(--icon-color);
+    margin-right: 1rem;
+}
+
+.last-cell button:nth-of-type(2) {
+    filter: var(--active-icon-color);
+}
+
+.last-cell button img {
+    width: 1rem;
+}
+
+.last-cell button:hover {
+    filter: var(--active-icon-color);
 }
 
 /*card style*/
