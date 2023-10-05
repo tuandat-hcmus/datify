@@ -64,7 +64,7 @@ mainView.addEventListener('scroll', () => {
     backgroundImg.style.backgroundSize = (100 - verScroll * 0.01) + '%';
     cover.style.opacity = verScroll * 0.003 + 0.5;
     let minHeight = parseFloat(getComputedStyle(contentHeading).getPropertyValue('height'));
-    console.log(minHeight);;
+    //console.log(minHeight);
     if (verScroll >= minHeight) {
         topbarBackground.style.opacity = 1;
         topbarContent.style.opacity = 1;

@@ -436,13 +436,27 @@ img {
 .next-prev-btn-container button {
     display: flex;
     border: none;
-    background-color: rgba(0, 0, 0, 0.7);
     border-radius: 50%;
     padding: 0.5rem;
 }
 
-.next-prev-btn-container button img {
+.non-active {
+    cursor: not-allowed;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.non-active img {
     filter: var(--icon-color);
+}
+
+.active-btn {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.8);
+    filter: var(--active-icon-color);
+}
+
+.active-btn img {
+    filter: var(--active-icon-color);
 }
 
 .signup-and-login button {
@@ -781,7 +795,9 @@ img {
 }
 
 .last-cell>span {
-    margin: 0 1rem;
+    width: 3rem;
+    margin-right: 1rem;
+    display: flex;
     justify-content: flex-end;
 }
 
