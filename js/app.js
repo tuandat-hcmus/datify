@@ -46,8 +46,6 @@ const playlistsArr = [
     new Playlist('All Out 80s', 'The biggest songs of the 1980s. Cover: Michael Jackson.', 'AllOut80s.jpg', '/')
 ];
 
-console.log(playlistsArr);
-
 const focusArr = [
     new Playlist('Peaceful Piano', 'Peaceful piano to help you slow down, breathe, and relax.', 'PeacefulPiano.jpg'),
     new Playlist('Deep Focus', 'Keep calm and focus with ambient and post-rock music.', 'DeepFocus.jpg'),
@@ -106,4 +104,3 @@ localStorage.setItem('playlists', JSON.stringify(playlistsArr));
 localStorage.setItem('focus', JSON.stringify(focusArr));
 
 const cardList = document.querySelectorAll('.card');
-console.log(cardList);

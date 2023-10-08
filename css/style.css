@@ -23,6 +23,31 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+[data-title] {
+    position: relative;
+}
+
+[data-title]::after {
+    background-color: rgb(21, 21, 21);
+    font-size: 0.815rem;
+    transition: 0.3s;
+    content: attr(data-title);
+    padding: 0.25rem;
+    position: absolute;
+    bottom: -100%;
+    left: -100%;
+    color: #fff;
+    border-radius: 0.25rem;
+    font-family: var(--base-font-family);
+    box-shadow: 2px 2px 2px black;
+    opacity: 0;
+    z-index: 100;
+}
+
+[data-title]:hover::after {
+    opacity: 1;
+}
+
 #app {
     background-color: black;
     height: 100vh;
@@ -438,25 +463,12 @@ img {
     border: none;
     border-radius: 50%;
     padding: 0.5rem;
-}
-
-.non-active {
-    cursor: not-allowed;
+    cursor: pointer;
     background-color: rgba(0, 0, 0, 0.7);
 }
 
-.non-active img {
+.next-prev-btn-container button img {
     filter: var(--icon-color);
-}
-
-.active-btn {
-    cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.8);
-    filter: var(--active-icon-color);
-}
-
-.active-btn img {
-    filter: var(--active-icon-color);
 }
 
 .signup-and-login button {

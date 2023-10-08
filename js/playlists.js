@@ -21,7 +21,7 @@ for (let i = 0; i < focusArr.length; i++) {
     }
 }
 
-console.log(playlistArr);
+// console.log(playlistArr);
 
 function createPlaylistCard(playlist, preDir) {
     let card = document.createElement('div');
