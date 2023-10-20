@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datify</title>
+    <link rel="icon" type="image/x-icon" href="../img/logo/spotify.ico">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div id="app">
+        <header class="topbar">
+            <div class="topbar-background"></div>
+            <div class="next-prev-btn-container">
+                <button id="previous-btn" data-title="Back">
+                    <img src="../assets/previous-button.svg" alt="">
+                </button>
+                <button id="forward-btn">
+                    <img src="../assets/forward-button.svg" alt="">
+                </button>
+            </div>
+            <div class="user-and-install">
+                <button>Explore Premium</button>
+                <button>
+                    <img src="../assets/install.svg" alt="">
+                    <span>Install app</span>
+                </button>
+                <button>
+                    <img src="../assets/notification.svg" alt="">
+                </button>
+                <div class="user"></div>
+            </div>
+        </header>
+        <section class="side-bar">
+            <div id="resizer">
+                <div class="resizer-line"></div>
+            </div>
+            <div class="sidebar-first-item">
+                <div class="top-logo">
+                    <a href="">
+                        <img src="../assets/spotify-icon.svg" alt="spotify icon" width="78px" height="24px">
+                    </a>
+                </div>
+                <ul>
+                    <li>
+                        <a href="" class="active">
+                            <img src="../assets/home-active-icon.svg" alt="">
+                            <span>Home</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            <img src="../assets/search-icon.svg" alt="">
+                            <span>Search</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sidebar-second-item">
+                <div class="library">
+                    <div class="library-header">
+                        <header>
+                            <div>
+                                <button class="collapse-btn">
+                                    <img src="../assets/library-active-button.svg" alt="">
+                                    Your library
+                                </button>
+                            </div>
+
+                            <div>
+                                <button class="add-playlist-btn">
+                                    <img src="../assets/create-playlist-button.svg" alt="">
+                                </button>
+                            </div>
+                        </header>
+                    </div>
+                    <div class="library-body">
+                        <section class="library-item">
+                            <div>
+                                <p>Create your first playlist</p>
+                                <p>It's easy, we'll help you</p>
+                            </div>
+                            <button>Create Playlist</button>
+                        </section>
+
+                        <section class="library-item">
+                            <div>
+                                <p>Let's find some podcasts to follow</p>
+                                <p>We'll keep you updated on new episodes</p>
+                            </div>
+                            <button>Browse podcasts</button>
+                        </section>
+                    </div>
+                </div>
+                <div class="sidebar-footer">
+                    <div class="sidebar-legal-links">
+                        <ul>
+                            <li>
+                                <a href="/">Legal</a>
+                            </li>
+
+                            <li>
+                                <a href="/">Privacy Center</a>
+                            </li>
+                            <li>
+                                <a href="/">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="/">Cookies</a>
+                            </li>
+                            <li>
+                                <a href="/">About Ads</a>
+                            </li>
+                            <li>
+                                <a href="/">Accessibility</a>
+                            </li>
+                        </ul>
+
+                        <a href="/">Cookies</a>
+                    </div>
+
+                    <div class="language-button-container">
+                        <button>
+                            <img src="../assets/global-language.svg" alt="">
+                            <span>English</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main-view-container" id="main-view">
+            <div class="home-page">
+                <div id="underbackground"></div>
+                <section class="good-morning">
+                    <h2>Good morning</h2>
+                    <div class="recommended-list">
+                        
+                    </div>
+                </section>
+                <section class="lists">
+                    <div class="lists-title">
+                        <a href="./playlists/spotify-playlists.html">Spotify Playlists</a>
+                        <a href="./playlists/spotify-playlists.html">Show all</a>
+                    </div>
+                    <div class="card-container" id="playlists-container">
+                        <div class="card">
+                            <div class="card-cover">
+                                <div>
+                                    <img src="../img/cover/playlists/Today-top-hits.jpg" alt="">
+                                </div>
+                                <button>
+                                    <img src="../assets/play-button.svg" alt="">
+                                </button>
+                            </div>
+
+                            <div class="card-content">
+                                <h2>Today's top hits</h2>
+                                <p>Jungkook is on top of the hottest 50</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="lists">
+                    <div class="lists-title">
+                        <a href="./html/playlists/focus.html">Focus</a>
+                        <a href="./html/playlists/focus.html">Show all</a>
+                    </div>
+                    <div class="card-container" id="focus-container">
+                        <div class="card">
+                            <div class="card-cover">
+                                <div>
+                                    <img src="../img/cover/playlists/PeacefulPiano.jpg" alt="">
+                                </div>
+                                <button>
+                                    <img src="../assets/play-button.svg" alt="">
+                                </button>
+                            </div>
+
+                            <div class="card-content">
+                                <h2>Peaceful Piano</h2>
+                                <p>Peaceful piano to help you slow...</p>
+                            </div>
+                </section>
+            </div>
+            <footer class="home-page-footer">
+                <div class="top-section">
+                    <div class="top-links">
+                        <ul>
+                            <li>
+                                <p>Company</p>
+                            </li>
+                            <li><a href="/">About</a></li>
+                            <li><a href="/">Jobs</a></li>
+                            <li><a href="/">For the Record</a></li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <p>Communities</p>
+                            </li>
+                            <li><a href="/">For Artists</a></li>
+                            <li><a href="/">Developers</a></li>
+                            <li><a href="/">Advertising</a></li>
+                            <li><a href="/">Investor</a></li>
+                            <li><a href="/">Vendors</a></li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <p>Useful links</p>
+                            </li>
+                            <li><a href="/">Support</a></li>
+                            <li><a href="/">Free mobile app</a></li>
+                        </ul>
+                    </div>
+                    <div class="social-links">
+                        <button><img src="../assets/instagram.svg" alt=""></button>
+                        <button><img src="../assets/twitter.svg" alt=""></button>
+                        <button><img src="../assets/facebook.svg" alt=""></button>
+                    </div>
+                </div>
+                <hr>
+                <div class="bottom-section">
+                    <p>&copy; 2023 Ngo Tuan Dat</p>
+                </div>
+            </footer>
+        </section>
+
+        <footer class="now-playing-bar">
+            <div class="preview-content">
+                <h6>PREVIEW OF SPOTIFY</h6>
+                <p>Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</p>
+            </div>
+
+            <button>Sign up free</button>
+        </footer>
+    </div>
+    <script src="../js/main.js"></script>
+    <script src="../js/back_forward.js"></script>
+</body>
+
+</html>

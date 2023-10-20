@@ -33,7 +33,7 @@ loginForm.addEventListener('submit', (event) => {
     }
     else {
         window.localStorage.setItem('username', usn);
-        window.location.href = '../index.html'
+        window.location.href = './index_#.html';
     }
 });
 
