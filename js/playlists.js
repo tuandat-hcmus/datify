@@ -1,5 +1,3 @@
-let playlistArr = JSON.parse(localStorage.getItem('playlists'));
-let focusArr = JSON.parse(localStorage.getItem('focus'));
 
 for (let i = 0; i < playlistArr.length; i++) {
     playlistArr[i].shortenContent = function () {

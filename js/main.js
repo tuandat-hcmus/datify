@@ -13,10 +13,6 @@ r.style.setProperty('--main-color', 'rgb(70, 13, 16');
 
 topbarBackground.style.opacity = 0;
 
-// playlist array
-const playlistArr = JSON.parse(localStorage.getItem('playlists'));
-const focusArr = JSON.parse(localStorage.getItem('focus'));
-
 playlistArr.forEach(item => {
     item.shortenContent = function() {
         let res = item.content;
@@ -35,13 +31,7 @@ focusArr.forEach(item => {
         }
         return res;
     }
-})
-
-function Track(name, cover, color) {
-    this.name = name;
-    this.cover = `/img/cover/album/${cover}`;
-    this.color = color;
-}
+});
 
 function createItem(preDir, obj) {
     const item = document.createElement('div');
@@ -87,19 +77,6 @@ function getRandNums(num, min, max) {
 }
 
 let rands = getRandNums(6, 0, 10);
-
-const trackArr = [
-    new Track('Seven (ft.Latto)', 'Seven.jpg', '#fff'),
-    new Track('Just The Way you are', 'Doo-Wops&Hooligans.jpg', '#FABD22'),
-    new Track("We don't talk anymore", 'NineTrackMind.jpg', '#F6E614'),
-    new Track('Something Just Like This', 'Memories.jpg', '#954F3F'),
-    new Track('One Thing', 'UpAllNight.jpg', '#A46749'),
-    new Track('Let Me Down Slowly', 'NarratedForYou.jpg', '#F5A06C'),
-    new Track('Sugar', 'V.jpg', '#BD2A48'),
-    new Track('Uptown Funk', 'UptownSpecial.jpg', '#fff'),
-    new Track('Treat You Better', 'Illuminate.jpg', '#306C97'),
-    new Track('Love Yourself', 'Purpose.jpg', '#4C4C4C')
-];
 
 const recomList = document.querySelector('.recommended-list');
 for(let i = 0; i < rands.length; i++) {
