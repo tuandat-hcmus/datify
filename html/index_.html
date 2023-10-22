@@ -230,12 +230,51 @@
         </section>
 
         <footer class="now-playing-bar">
-            <div class="preview-content">
-                <h6>PREVIEW OF SPOTIFY</h6>
-                <p>Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</p>
+            <div class="playing-track">
+                <div class="track-cover">
+                    <img src="../img/cover/album/NineTrackMind.jpg" alt="">
+                </div>
+                <div class="track-info">
+                    <span>We don't talk anymore</span>
+                    <span>Charlie Puth</span>
+                </div>
+                <button>
+                    <img src="../assets/heart-icon.svg" alt="">
+                </button>
             </div>
-
-            <button>Sign up free</button>
+            <div class="player-controls">
+                <div class="control-buttons">
+                    <button id="prev-track-btn">
+                        <img src="../assets/song-back-button.svg" alt="">
+                    </button>
+                    <button id="play-btn">
+                        <img src="../assets/play-button.svg" alt="">
+                    </button>
+                    <button id="next-song-btn">
+                        <img src="../assets/song-forward-button.svg" alt="">
+                    </button>
+                </div>
+                <div class="playback-bar">
+                    <span id="current-time">00:00</span>
+                    <div id="progress-bar">
+                        <div id="progress"></div>
+                    </div>
+                    <span id="duration-time">--:--</span>
+                </div>
+            </div>
+            <div class="extra-buttons">
+                <button>
+                    <img src="../assets/now-playing-info-button.svg">
+                </button>
+                <div class="volumn-adjust">
+                    <button>
+                        <img src="../assets/volumn.svg" alt="">
+                    </button>
+                    <div id="volumn-bar">
+                        <div id="volumn"></div>
+                    </div>
+                </div>
+            </div>
         </footer>
     </div>
     <script src="../js/data.js"></script>
