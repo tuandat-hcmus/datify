@@ -102,16 +102,18 @@ const trackArr = [
         "album": "Seven (feat. Latto)",
         "dayAdded": "4 days ago",
         "duration": "3:04",
-        "color": "#fff"
+        "color": "#fff",
+        "path": "/media/Seven.mp3"
     },
     {
-        "name": "Just The Way you are",
+        "name": "Just The Way You Are",
         "cover": "/img/cover/album/Doo-Wops&Hooligans.jpg",
         "artist": "Bruno Mars",
         "album": "Doo-Wops & Hooligans",
         "dayAdded": "25 Sep 2023",
         "duration": "3:40",
-        "color": "#FABD22"
+        "color": "#FABD22",
+        "path": "/media/Just The Way You Are.mp3"
     },
     {
         "name": "We don't talk anymore",
@@ -120,7 +122,8 @@ const trackArr = [
         "album": "Nine Track Mind",
         "dayAdded": "10 Oct 2015",
         "duration": "3:37",
-        "color": "#F6E614"
+        "color": "#F6E614",
+        "path": "/media/We Don't Talk Anymore"
     },
     {
         "name": "Something Just Like This",
@@ -129,7 +132,8 @@ const trackArr = [
         "album": "Memories... Do Not Open",
         "dayAdded": "7 Apr 2017",
         "duration": "4:07",
-        "color": "#954F3F"
+        "color": "#954F3F",
+        "path": "/media/Something Just Like This.mp3"
     },
     {
         "name": "One Thing",
@@ -138,7 +142,8 @@ const trackArr = [
         "album": "Up All Night",
         "dayAdded": "25 May 2012",
         "duration": "3:17",
-        "color": "#A46749"
+        "color": "#A46749",
+        "path": "/media/One Thing.mp3"
     },
     {
         "name": "Let Me Down Slowly",
@@ -147,7 +152,8 @@ const trackArr = [
         "album": "Narrated For You",
         "dayAdded": "16 Nov 2018",
         "duration": "2:49",
-        "color": "#F5A06C"
+        "color": "#F5A06C",
+        "path": "/media/Let Me Down Slowly.mp3"
     },
     {
         "name": "Sugar",
@@ -156,7 +162,8 @@ const trackArr = [
         "album": "V (Asia Tour Edition)",
         "dayAdded": "18 May 2015",
         "duration": "3:55",
-        "color": "#BD2A48"
+        "color": "#BD2A48",
+        "path": "/media/Sugar.mp3"
     },
     {
         "name": "Uptown Funk",
@@ -165,7 +172,8 @@ const trackArr = [
         "album": "Uptown Special",
         "dayAdded": "12 Jan 2015",
         "duration": "4:29",
-        "color": "#fff"
+        "color": "#fff",
+        "path": "/media/Uptown Funk.mp3"
     },
     {
         "name": "Treat You Better",
@@ -174,7 +182,8 @@ const trackArr = [
         "album": "Illuminated",
         "dayAdded": "20 Apr 2017",
         "duration": "3:07",
-        "color": "#306C97"
+        "color": "#306C97",
+        "path": "/media/Treat You Better.mp3"
     },
     {
         "name": "Love Yourself",
@@ -183,6 +192,7 @@ const trackArr = [
         "album": "Purpose (Deluxe)",
         "dayAdded": "13 Nov 2015",
         "duration": "3:53",
-        "color": "#4C4C4C"
+        "color": "#4C4C4C",
+        "path": "/media/Love Yourself.mp3"
     }
 ]

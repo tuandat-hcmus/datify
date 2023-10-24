@@ -230,14 +230,14 @@
         </section>
 
         <footer class="now-playing-bar">
-            <audio src="../media/Some Thing Just Like This.mp3" id="track-audio"></audio>
+            <audio src="" id="track-audio"></audio>
             <div class="playing-track">
-                <div class="track-cover">
-                    <img src="../img/cover/album/NineTrackMind.jpg" alt="">
+                <div id="track-cover">
+                    <!-- <img src="../img/cover/album/NineTrackMind.jpg" alt=""> -->
                 </div>
-                <div class="track-info">
-                    <span>We don't talk anymore</span>
-                    <span>Charlie Puth</span>
+                <div id="track-info">
+                    <!-- <span>We don't talk anymore</span>
+                    <span>Charlie Puth</span> -->
                 </div>
                 <button>
                     <img src="../assets/heart-icon.svg" alt="">
@@ -259,7 +259,7 @@
                     <span id="current-time">00:00</span>
                     <div id="progress-bar" class="slider-bar">
                         <div id="progress" class="slider">
-                            <!-- <div class="thumb"></div> -->
+                            <div class="thumb"></div>
                         </div>
                     </div>
                     <span id="duration-time">--:--</span>
@@ -269,12 +269,14 @@
                 <button>
                     <img src="../assets/now-playing-info-button.svg">
                 </button>
-                <div class="volumn-adjust">
+                <div class="volume-adjust">
                     <button>
-                        <img src="../assets/volumn.svg" alt="">
+                        <img src="../assets/volume.svg" alt="">
                     </button>
-                    <div id="volumn-bar">
-                        <div id="volumn"></div>
+                    <div id="volume-bar" class="slider-bar">
+                        <div id="volume" class="slider">
+                            <div class="thumb"></div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -33,14 +33,14 @@ focusArr.forEach(item => {
     }
 });
 
-function createItem(preDir, obj) {
+function createItem(preDir, obj, id) {
     const item = document.createElement('div');
     item.setAttribute('data-color', obj.color);
     item.classList.add('item');
     item.innerHTML = `<img src="${preDir}${obj.cover}" alt="">
     <div class="right">
         <span>${obj.name}</span>
-        <button>
+        <button data-id="${id}" class="play-btns">
             <img src="${preDir}/assets/play-button.svg" alt="">
         </button>
     </div>`
@@ -80,7 +80,7 @@ let rands = getRandNums(6, 0, 10);
 
 const recomList = document.querySelector('.recommended-list');
 for(let i = 0; i < rands.length; i++) {
-    recomList.appendChild(createItem('..', trackArr[rands[i]]));
+    recomList.appendChild(createItem('..', trackArr[rands[i]], rands[i]));
 }
 
 rands = getRandNums(5, 1, playlistArr.length);
@@ -111,3 +111,13 @@ mainView.addEventListener('scroll', () => {
     document.querySelector('.topbar-background').style.opacity = mainView.scrollTop / 200;
 });
 
+
+const playButtons = document.querySelectorAll('.play-btns');
+playButtons.forEach(btn => {
+    btn.addEventListener('click', function() {
+        let index = this.getAttribute('data-id');
+        index = parseInt(index);
+        loadTrack('..', trackArr[index]);
+        playSong();
+    })
+})

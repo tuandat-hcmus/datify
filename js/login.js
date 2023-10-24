@@ -8,11 +8,11 @@ let formInput = document.getElementsByClassName('container');
 
 visibleButton.addEventListener('click', () => {
     let imgSrc = visibleButton.childNodes[0].getAttribute('src');
-    if (imgSrc == './assets/hidden-pass.svg') {
-        imgSrc = './assets/show-pass.svg';
+    if (imgSrc == '../assets/hidden-pass.svg') {
+        imgSrc = '../assets/show-pass.svg';
         loginForm.psw.type = 'text';
     } else {
-        imgSrc = './assets/hidden-pass.svg';
+        imgSrc = '../assets/hidden-pass.svg';
         loginForm.psw.type = 'password';
     }
     visibleButton.childNodes[0].setAttribute('src', imgSrc);
@@ -33,7 +33,7 @@ loginForm.addEventListener('submit', (event) => {
     }
     else {
         window.localStorage.setItem('username', usn);
-        window.location.href = './index_#.html';
+        window.location.href = './index_.html';
     }
 });
 
