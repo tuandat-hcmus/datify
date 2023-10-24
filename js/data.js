@@ -123,7 +123,7 @@ const trackArr = [
         "dayAdded": "10 Oct 2015",
         "duration": "3:37",
         "color": "#F6E614",
-        "path": "/media/We Don't Talk Anymore"
+        "path": "/media/We Don't Talk Anymore.mp3"
     },
     {
         "name": "Something Just Like This",
