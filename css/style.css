@@ -1281,14 +1281,14 @@ img {
     gap: 0.5rem;
 }
 
-.playback-bar > div{
+.playback-bar>div {
     flex: 1;
-    background-color: hsla(0,0%,100%,.3);
+    background-color: hsla(0, 0%, 100%, .3);
     height: 0.25rem;
     border-radius: 0.25rem;
 }
 
-.playback-bar > span {
+.playback-bar>span {
     font-family: var(--base-font-family);
     color: var(--subtext-color);
     font-size: 0.75rem;
@@ -1327,4 +1327,28 @@ img {
     background-color: hsla(0, 0%, 100%, .3);
     height: 0.25rem;
     width: 50%;
+}
+
+.slider {
+    background-color: #fff;
+    border-radius: 0.25rem;
+    width: 0;
+    height: 100%;
+    transition: .2s;
+    position: relative;
+}
+
+.slider-bar:hover .slider {
+    background-color: var(--green-button-color);
+}
+
+.thumb {
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }

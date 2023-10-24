@@ -138,7 +138,7 @@
                 <section class="good-morning">
                     <h2>Good morning</h2>
                     <div class="recommended-list">
-                        
+
                     </div>
                 </section>
                 <section class="lists">
@@ -230,6 +230,7 @@
         </section>
 
         <footer class="now-playing-bar">
+            <audio src="../media/Some Thing Just Like This.mp3" id="track-audio"></audio>
             <div class="playing-track">
                 <div class="track-cover">
                     <img src="../img/cover/album/NineTrackMind.jpg" alt="">
@@ -256,8 +257,10 @@
                 </div>
                 <div class="playback-bar">
                     <span id="current-time">00:00</span>
-                    <div id="progress-bar">
-                        <div id="progress"></div>
+                    <div id="progress-bar" class="slider-bar">
+                        <div id="progress" class="slider">
+                            <!-- <div class="thumb"></div> -->
+                        </div>
                     </div>
                     <span id="duration-time">--:--</span>
                 </div>
@@ -280,6 +283,7 @@
     <script src="../js/data.js"></script>
     <script src="../js/main.js"></script>
     <script src="../js/back_forward.js"></script>
+    <script src="../js/music_player.js"></script>
 </body>
 
 </html>
